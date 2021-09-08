@@ -1,5 +1,7 @@
 import pkg_resources
 
+def read_au_zipcodes():
+    return read_file_lines("data/au_zipcodes.csv")
 
 def read_us_zipcodes():
     return read_file_lines("data/us_zipcodes.csv")

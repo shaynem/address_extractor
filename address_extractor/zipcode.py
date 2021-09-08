@@ -29,7 +29,7 @@ class ZipcodeInfo(object):
 
 def load_zipcodes():
     zipcodes = {}
-    for line in datafile.read_us_zipcodes()[1:]:
+    for line in datafile.read_au_zipcodes()[1:]:
         zip_info = ZipcodeInfo.from_line(line)
         zipcodes[zip_info.zipcode] = zip_info
     return zipcodes
